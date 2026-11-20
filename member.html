@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Members</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Library Members</h1>
+
+        <!-- Add Member Form -->
+        <div class="form-box">
+            <h2>Add Member</h2>
+
+            <form id="memberForm">
+
+                <input type="text" id="memberId" placeholder="Member ID">
+
+                <input type="text" id="name" placeholder="Name">
+
+                <input type="text" id="department" placeholder="Department">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="text" id="mobile" placeholder="Mobile Number"
+                       maxlength="10">
+
+                <button type="submit">Add Member</button>
+
+            </form>
+        </div>
+
+        <!-- View Members -->
+        <div class="table-box">
+            <h2>View Members</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Member ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="memberTableBody">
+                    <!-- Members will appear here -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="mem.js"></script>
+
+</body>
+</html>

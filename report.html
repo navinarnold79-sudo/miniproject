@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Reports</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Library Reports</h1>
+        <p>Library activity summary</p>
+
+        <div class="report-container">
+
+            <div class="card">
+                <h3>Total Books</h3>
+                <h2 id="totalBooks">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Total Members</h3>
+                <h2 id="totalMembers">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Available Books</h3>
+                <h2 id="availableBooks">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Issued Books</h3>
+                <h2 id="issuedBooks">0</h2>
+            </div>
+
+        </div>
+
+        <button onclick="updateReports()">Refresh Reports</button>
+        <a href="returnbook.html">Return Book</a>
+        <a href="index.html">Back to Dashboard</a>
+    </div>
+
+    <script src="report.js"></script>
+</body>
+</html>

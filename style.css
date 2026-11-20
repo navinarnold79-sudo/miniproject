@@ -1,0 +1,311 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marquee-container {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* =========================
+   BASE STYLES
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("for project.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+.header {
+    
+    color: white;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #f4c95d;
+}
+
+
+/* =========================
+   WELCOME PAGE
+========================= */
+
+.welcome-section {
+    max-width: 1200px;
+    min-height: calc(100vh - 130px);
+    margin: auto;
+    padding: 60px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.welcome-content {
+    flex: 1;
+}
+
+.subtitle {
+    color:black ;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.welcome-content h1 {
+    color: black;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 550px;
+    font-size: 18px;
+    color: bisque;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #d28b00;
+    color: white;
+
+    padding: 13px 28px;
+    border-radius: 6px;
+
+    border: none;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a96f00;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   LIBRARY IMAGE
+========================= */
+
+.banner-container {
+    flex: 1;
+}
+
+.library-image {
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-section {
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background-color:transparent;
+    border: 2px solid rgba(225, 225, 225,0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h1 {
+    text-align: center;
+    color: #173b57;
+    margin-bottom: 10px;
+}
+
+.login-card > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #173b57;
+}
+
+.login-card .btn {
+    width: 100%;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #173b57;
+    text-decoration: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #173b57;
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-content h1 {
+        font-size: 40px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .library-image {
+        height: 280px;
+    }
+}

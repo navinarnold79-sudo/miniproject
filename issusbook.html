@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Issue Book</title>
+  <link rel="stylesheet" href="issusbook.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Issue Book</h2>
+      <form id="issueForm">
+        <label for="member">Member Name</label>
+        <select id="member"></select>
+
+        <label for="book">Book Name</label>
+        <select id="book"></select>
+
+        <label for="issueDate">Issue Date</label>
+        <input type="date" id="issueDate">
+
+        <label for="returnDate">Return Date</label>
+        <input type="date" id="returnDate">
+
+        <button type="submit">Issue Book</button>
+      </form>
+
+      <div id="message" class="msg"></div>
+      <a id="goReturn" href="returnbook.html" style="display:none">Go to Return Book &rarr;</a>
+    </div>
+  </div>
+  <script src="issus.js"></script>
+</body>
+</html>

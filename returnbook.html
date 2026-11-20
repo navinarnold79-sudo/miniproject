@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Return Book &amp; Reports</title>
+  <link rel="stylesheet" href="returnbook.css">
+</head>
+<body>
+  <nav>
+    <a href="issusbook.html">Issue Book</a>
+    <a href="return.html" class="active">Return Book &amp; Reports</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Reports screen -->
+    <div class="card">
+      <h2>Reports</h2>
+      <div class="stats">
+        <div class="stat"><span id="totalBooks">0</span><p>Total Books</p></div>
+        <div class="stat"><span id="totalMembers">0</span><p>Total Members</p></div>
+        <div class="stat"><span id="availableBooks">0</span><p>Available Books</p></div>
+        <div class="stat"><span id="issuedBooks">0</span><p>Issued Books</p></div>
+      </div>
+
+      <h3>Book-wise Summary</h3>
+      <table>
+        <thead>
+          <tr><th>Book</th><th>Available</th><th>Currently Issued</th></tr>
+        </thead>
+        <tbody id="bookSummary"></tbody>
+      </table>
+    </div>
+
+    <!-- Return Book screen -->
+    <div class="card">
+      <h2>Return Book</h2>
+      <div id="message" class="msg"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Member</th><th>Book</th><th>Issue Date</th>
+            <th>Due Date</th><th>Status</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="issueTable"></tbody>
+      </table>
+    </div>
+
+  </div>
+  <script src="return.js"></script>
+</body>
+</html>

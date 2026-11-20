@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #243b64;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.report-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+.card h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #2463eb;
+    font-size: 35px;
+}
+
+button {
+    margin: 25px 10px;
+    padding: 12px 22px;
+    background: #2463eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+a {
+    margin: 10px;
+    color: #2463eb;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .report-container {
+        grid-template-columns: 1fr;
+    }
+}
